@@ -3,7 +3,6 @@ package mobile.information.model.domain;
 import lombok.Data;
 import mobile.information.model.BaseEntity;
 import org.jetbrains.annotations.Nullable;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
