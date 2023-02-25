@@ -107,11 +107,6 @@
             <artifactId>okhttp</artifactId>
             <version>4.10.0</version>
         </dependency>
-        <!-- EUREKA -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
     </dependencies>
 
     <dependencyManagement>

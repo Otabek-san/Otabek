@@ -2,7 +2,7 @@ package mobile.information.model.domain;
 
 import lombok.Data;
 import mobile.information.model.BaseEntity;
-import reactor.util.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
