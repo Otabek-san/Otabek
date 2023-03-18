@@ -14,7 +14,7 @@ import mobile.information.repository.UsersRepository;
 import org.springframework.stereotype.Service;
 
 @Service("users_service")
-public class UsersServiceImpl implements UsersService{
+public class UsersServiceImpl implements UsersService {
 
     private final UsersRepository usersRepository;
 
@@ -37,6 +37,8 @@ public class UsersServiceImpl implements UsersService{
         user.setChildren(body.getChildren());
         user.setFromAge(body.getFromAge());
         user.setTillAge(body.getTillAge());
+        if (body.getTelegram() == null && body.getPhoneNumber() == null)
+            throw new BaseException(ResultCode.cannot_be_null);
         user.setTelegram(body.getTelegram());
         user.setPhoneNumber(body.getPhoneNumber());
         user.setCity(body.getCity());
